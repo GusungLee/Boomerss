@@ -100,9 +100,9 @@ public class MainGamePlay {
 
 		// 딜러 행동 페이즈
 		while (d.cardsCalc()<17) {
-			System.out.print(d.getDealerHand() +"\n딜러 점수 : "+d.cardsCalc());
 			d.hit();
 		} d.stand();
+			System.out.print(d.getDealerHand() +"\n딜러 점수 : "+d.cardsCalc());
 		if (!d.getStatus().isEmpty()) {
 			System.out.printf(" (%s)\n",d.getStatus());
 		}
